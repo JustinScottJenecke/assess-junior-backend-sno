@@ -1,6 +1,13 @@
 package sno.assess.backendjrTest.factoryTest;
 
 import org.junit.jupiter.api.Test;
+import sno.assess.backendjr.entity.Comment;
+import sno.assess.backendjr.entity.Post;
+import sno.assess.backendjr.entity.User;
+import sno.assess.backendjr.factory.PostFactory;
+import sno.assess.backendjr.factory.UserFactory;
+
+import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,8 +20,8 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CommentFactoryTest {
 
     @Test
-    void test(){
-        assertEquals("a", "c");
+    void createCommentTest(){
+
     }
 
 }
