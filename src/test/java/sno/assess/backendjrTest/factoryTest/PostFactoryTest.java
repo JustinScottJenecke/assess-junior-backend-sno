@@ -26,6 +26,7 @@ public class PostFactoryTest {
 
     @BeforeEach
     void setUp() {
+
         testComments = new HashSet<>();
 
         comment = new Comment.Builder().build();
