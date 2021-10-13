@@ -10,6 +10,6 @@ import sno.assess.backendjr.service.IService;
  * Date: 13/10/2021
  * */
 
-@Service
+
 public interface ICommentService extends IService <Comment, String> {
 }
