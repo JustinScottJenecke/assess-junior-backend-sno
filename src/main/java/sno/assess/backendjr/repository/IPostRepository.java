@@ -7,7 +7,9 @@ package sno.assess.backendjr.repository;
  * */
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 import sno.assess.backendjr.entity.Post;
 
+@Repository
 public interface IPostRepository extends JpaRepository <Post, String> {
 }
