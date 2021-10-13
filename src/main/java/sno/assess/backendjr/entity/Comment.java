@@ -1,5 +1,11 @@
 package sno.assess.backendjr.entity;
 
+/**
+ * Author: Justin Scott Jenecke
+ * POJO class for Comment entity
+ * Date Created: 12/10/2021
+ * */
+
 public class Comment {
 
     private String commentId;
