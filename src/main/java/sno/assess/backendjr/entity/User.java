@@ -1,5 +1,11 @@
 package sno.assess.backendjr.entity;
 
+/**
+ * Author: Justin Scott Jenecke
+ * POJO class for User entity
+ * Date Created: 12/10/2021
+ * */
+
 import java.util.Set;
 
 public class User {
