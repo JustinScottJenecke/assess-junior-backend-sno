@@ -6,17 +6,28 @@ package sno.assess.backendjr.entity;
  * Date Created: 12/10/2021
  * */
 
+import javax.persistence.*;
 import java.util.Set;
 
+@Entity
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String userId;
+
     private String username;
 
+    @OneToMany(fetch = FetchType.LAZY)
     private Set<Comment> createdComments;
 
+    @OneToMany(fetch = FetchType.LAZY)
     private Set<Post> createdPosts;
+
+    @OneToMany(fetch = FetchType.LAZY)
     private Set<Post> likes;
+
+    @OneToMany(fetch = FetchType.LAZY)
     private Set<Post> dislikes;
 
     protected User() {

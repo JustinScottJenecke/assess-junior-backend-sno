@@ -6,18 +6,26 @@ package sno.assess.backendjr.entity;
  * Date Created: 12/10/2021
  * */
 
+import javax.persistence.*;
 import java.util.Set;
 
+@Entity
 public class Post {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String postId;
+
+    @ManyToOne(fetch = FetchType.EAGER)
     private User author;
+
     private String title;
     private String body;
 
     private int likes;
     private int dislikes;
 
+    @OneToMany(fetch = FetchType.LAZY)
     private Set<Comment> comments;
 
     protected Post() {

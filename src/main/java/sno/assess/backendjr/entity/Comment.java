@@ -1,16 +1,25 @@
 package sno.assess.backendjr.entity;
 
+import javax.persistence.*;
+
 /**
  * Author: Justin Scott Jenecke
  * POJO class for Comment entity
  * Date Created: 12/10/2021
  * */
 
+@Entity
 public class Comment {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String commentId;
+
     private String body;
+    @ManyToOne(fetch = FetchType.EAGER)
     private User user;
+
+    @ManyToOne(fetch = FetchType.EAGER)
     private Post post;
 
     protected Comment() {
