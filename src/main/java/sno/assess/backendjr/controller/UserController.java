@@ -6,7 +6,7 @@ import sno.assess.backendjr.entity.User;
 import sno.assess.backendjr.service.userService.UserService;
 
 @RestController
-@RequestMapping("backendjr.assess.sno/user")
+@RequestMapping("/backendjr.assess.sno/user")
 public class UserController {
 
     @Autowired

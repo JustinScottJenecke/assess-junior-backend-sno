@@ -8,7 +8,7 @@ import sno.assess.backendjr.service.commentService.CommentService;
 import sno.assess.backendjr.service.postService.PostService;
 
 @RestController
-@RequestMapping("backendjr.assess.sno/comment")
+@RequestMapping("/backendjr.assess.sno/comment")
 public class CommentController {
 
     @Autowired

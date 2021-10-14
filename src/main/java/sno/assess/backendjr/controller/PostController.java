@@ -7,7 +7,7 @@ import sno.assess.backendjr.entity.Post;
 import sno.assess.backendjr.service.postService.PostService;
 
 @RestController
-@RequestMapping("backendjr.assess.sno/post")
+@RequestMapping("/backendjr.assess.sno/post")
 public class PostController {
 
     @Autowired

@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("backendjr.assess.sno/")
+@RequestMapping("/backendjr.assess.sno")
 public class AhomeController {
 
     @RequestMapping
